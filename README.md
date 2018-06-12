@@ -14,10 +14,7 @@ current level with a simple login and click of a button.
 
 EveSkillsTracker uses the ESI (Eve Swagger Interface) API to pull user information from Eve Online, along with 
 the helper tool Retrofit to gather the information into class objects. Once logged in,you will be able to view your attributes 
-and ISK. You are then greeted with three buttons, "view current skills", which gives and overview skill rank, and skill points 
-of each skill, "view queued skills", which does the same with the start and end time of training displayed in order of the 
-queued position, and "skills projection calculator", which calculates the skillpoints you will need to advance to a level 1-5 
-from your current skill level. The skill rank multiplier is considered during the calculation.
+and ISK. You are then greeted with three buttons, "view current skills", which gives and overview descrpription, skill rank, and skill points of each skill, "view queued skills", which does the same with the start and end time of training displayed in order of the queued position, and "skills projection calculator", which calculates the skillpoints you will need to advance to a level 1-5 from your current skill level. The skill rank multiplier is considered during the calculation.
 
 # How is EveSkillTracker currently
 
