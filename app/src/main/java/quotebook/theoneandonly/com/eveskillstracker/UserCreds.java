@@ -1,8 +1,7 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
-/**
- * Created by fvf on 6/3/18.
- */
+//API mapping JSON for name and ID of character. Character
+//ID is used later for API calls
 
 class UserCreds {
 

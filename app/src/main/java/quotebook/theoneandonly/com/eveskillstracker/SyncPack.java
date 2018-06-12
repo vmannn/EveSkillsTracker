@@ -1,7 +1,8 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
 public class SyncPack {
-
+//Passed to doInBackground. this is the info needed to
+    //start making API calls
     private String code;
     private String host;
     private String auth;

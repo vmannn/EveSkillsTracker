@@ -2,16 +2,17 @@
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scroll"
+    android:background="@drawable/finallog"
     tools:context=".mathlayout">
 
     <LinearLayout
         android:id="@+id/fraglinear"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:orientation="vertical"/>
 
 </android.support.v4.widget.NestedScrollView>

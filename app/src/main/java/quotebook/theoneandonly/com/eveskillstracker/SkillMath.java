@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
+//This class is the fragment for each skill that does all the calculations
+//in the skill projector
 
 public class SkillMath extends Fragment {
 
@@ -76,10 +77,10 @@ public class SkillMath extends Fragment {
             public void onClick(View view) {
 
                 number = Integer.valueOf(mytext.getText().toString());
-
-                if(number <= active_skill) {
-                    response.setText("Please enter a skill level that's lower than" +
-                            " your active skill level");
+                //The math finds the skillpoints needed to advance to a particular level
+                if(number <= active_skill || number > 5) {
+                    response.setText("Please enter a skill level that's higher than" +
+                            " your active skill level and no greater than 5.");
                     return;
                 }
                     if(active_skill == 1) {

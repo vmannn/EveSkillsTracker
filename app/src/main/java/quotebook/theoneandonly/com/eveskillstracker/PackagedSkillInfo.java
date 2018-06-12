@@ -10,7 +10,7 @@ public class PackagedSkillInfo implements Serializable  {
 
 
 
-
+//information we need to display for each skill
 
     private String name; //name of skill
     private String description; //description of skill

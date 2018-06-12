@@ -1,10 +1,10 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
-/**
- * Created by fvf on 6/4/18.
- */
+
 
 class Skillsheet {
+
+    //Maps the JSON to this class to get our attributes
 
     private String charisma;
     private String intelligence;

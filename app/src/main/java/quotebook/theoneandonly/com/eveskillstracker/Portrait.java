@@ -1,9 +1,8 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
-/**
- * Created by fvf on 6/4/18.
- */
 
+//API mapping to recieve character portrait. Portrait comes
+//an imagesource online url
 public class Portrait {
 
 

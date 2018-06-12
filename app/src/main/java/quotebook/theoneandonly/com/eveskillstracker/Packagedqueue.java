@@ -2,6 +2,8 @@ package quotebook.theoneandonly.com.eveskillstracker;
 
 import java.io.Serializable;
 
+
+//Information we need to display for each skill being trained in queue
 public class Packagedqueue implements Serializable {
 
 

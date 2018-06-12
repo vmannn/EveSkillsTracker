@@ -9,10 +9,8 @@ import retrofit2.http.Headers;
 import retrofit2.http.Path;
 import java.util.List;
 
-/**
- * Created by fvf on 6/4/18.
- */
 
+//makes a call to get skills being actively trained
 public interface skillsQueue {
 
     @Headers("Accept: application/json")

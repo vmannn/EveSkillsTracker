@@ -1,8 +1,8 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
-/**
- * Created by fvf on 6/3/18.
- */
+
+
+//JSON Maps int class with retrofit
 
 class AccessToken {
 

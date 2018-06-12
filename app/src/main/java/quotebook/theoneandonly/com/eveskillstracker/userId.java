@@ -12,9 +12,7 @@ import retrofit2.http.Path;
 
 import static java.lang.annotation.ElementType.FIELD;
 
-/**
- * Created by fvf on 6/3/18.
- */
+//Get the userID and name
 
 public interface userId {
 

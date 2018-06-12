@@ -6,10 +6,8 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 
-/**
- * Created by fvf on 6/4/18.
- */
 
+//API call
 public interface CharacterSkills {
 
     @Headers("Accept: application/json")

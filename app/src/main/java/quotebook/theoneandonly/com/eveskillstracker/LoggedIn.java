@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LoggedIn extends AppCompatActivity {
+    //Text for attributes and picture
     private ImageView characterpic;
     private TextView charismat;
     private TextView intelligencet;
@@ -24,13 +25,16 @@ public class LoggedIn extends AppCompatActivity {
     private TextView willpowert;
     private TextView moneyt;
     private TextView namet;
+    //buttons for next activities
     private Button viewskills;
     private Button viewqskills;
     private Button skill_math;
     ArrayList<PackagedSkillInfo> my_skillpack;
     ArrayList<Packagedqueue> my_queuepack;
 
-
+//This class displays user login info such as attributes, wallet, and
+    //has three buttons to display skills, queued skills, and the skill
+    //calculator
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class LoggedIn extends AppCompatActivity {
         setContentView(R.layout.activity_logged_in);
 
 
-
+        //retrieve our information sent in from previous activity
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String charisma = extras.getString("charisma");
@@ -53,6 +57,7 @@ public class LoggedIn extends AppCompatActivity {
         List skills = (List<mySkills>) intent.getSerializableExtra("skills");
         my_skillpack = (ArrayList<PackagedSkillInfo>) intent.getSerializableExtra("skillpack");
 
+        //link information with the textviews
         characterpic = (ImageView) findViewById(R.id.characterpic);
         loadImageFromUrl(picture);
 
@@ -74,7 +79,7 @@ public class LoggedIn extends AppCompatActivity {
 
         String mecash = Float.toString(money);
         moneyt = (TextView) findViewById(R.id.wallet);
-        moneyt.setText("My Wallet Balance: " + mecash);
+        moneyt.setText("My Wallet Balance: " + mecash + " ISK");
 
         namet = (TextView) findViewById(R.id.name);
         namet.setText("Welcome " + named + " !");
@@ -83,6 +88,7 @@ public class LoggedIn extends AppCompatActivity {
         viewqskills = (Button) findViewById(R.id.qskills);
         skill_math = (Button) findViewById(R.id.calculator);
 
+        //button click
         viewskills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,7 +104,7 @@ public class LoggedIn extends AppCompatActivity {
             }
         });
 
-
+        //button click
         skill_math.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,7 +121,7 @@ public class LoggedIn extends AppCompatActivity {
             }
         });
 
-
+        //button click
         viewqskills.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,7 +139,7 @@ public class LoggedIn extends AppCompatActivity {
         });
 
     }
-
+    //get the character portrait
     private void loadImageFromUrl(String url){
         Picasso.with(this).load(url).placeholder(R.mipmap.ic_launcher)
                 .error(R.mipmap.ic_launcher)

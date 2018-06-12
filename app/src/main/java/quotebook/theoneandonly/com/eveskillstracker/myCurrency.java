@@ -1,9 +1,7 @@
 package quotebook.theoneandonly.com.eveskillstracker;
 
-/**
- * Created by fvf on 6/4/18.
- */
 
+//API mapping for ISK balance
 public class myCurrency {
 
     private float balance;

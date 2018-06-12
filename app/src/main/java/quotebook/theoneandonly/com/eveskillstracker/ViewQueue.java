@@ -8,7 +8,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ViewQueue extends AppCompatActivity {
-
+//This class displays each skill in the queue
 
     private TextView skillinfo;
     private int i = 0;
@@ -26,19 +26,19 @@ public class ViewQueue extends AppCompatActivity {
         skillinfo = (TextView) findViewById(R.id.qdisplay);
 
 
-        if(bundledskills.size() == 0){
+        if(bundledskills.size() == 0){ //no queued skills.
 
             skillinfo.setText("You have no skills currently in the training queue...");
             return;
 
 
         }
-else{
+else{    //Goes through each queued skill and displays its information
         for(; bundledskills.size() > i; ++i) {
 
             if (i == 0) {
 
-                skillinfo.setText("Position in queue: " + String.valueOf(bundledskills.get(i).getQueue_position()) +
+                skillinfo.setText("\n\n\nPosition in queue: " + String.valueOf(bundledskills.get(i).getQueue_position()) +
                         "\n" + "Skill name: " + bundledskills.get(i).getName() +
                         "\n" + "Description: " + bundledskills.get(i).getDescription() +
                         "\n" + "Training time complete date: " + bundledskills.get(i).getFinish_date() +

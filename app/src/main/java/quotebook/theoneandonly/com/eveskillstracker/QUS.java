@@ -3,11 +3,8 @@ package quotebook.theoneandonly.com.eveskillstracker;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by fvf on 6/4/18.
- */
 
-
+//API mapping for queued skills.
 
 public class QUS implements Serializable {
 

@@ -4,7 +4,7 @@ public class skillIDS {
 
     private int type_id;
 
-
+//Class to capture each skill ID
 
     skillIDS(int type_id){
 

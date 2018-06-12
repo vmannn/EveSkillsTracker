@@ -11,7 +11,7 @@ public class ViewSkills extends Activity {
 
 
     TextView allskills;
-    int i = 0;
+    int i = 0; //counter
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,11 @@ public class ViewSkills extends Activity {
 
         allskills = (TextView) findViewById(R.id.skills);
 
-
+        //Goes through skills and displays the necessary info
         for(; i < bundledskills.size(); ++i){
 
             if(i == 0) {
-                allskills.setText("Skill: " + bundledskills.get(i).getName() +
+                allskills.setText("\n\n\nSkill: " + bundledskills.get(i).getName() +
                         "\n" + "Description: " + bundledskills.get(i).getDescription() +
                         "\n" + "Skillrank: " + String.valueOf(Math.round(bundledskills.get(i).getSkillrank())) +
                         "\n" + "Active Skill level: " + String.valueOf(bundledskills.get(i).getActive_skill_level()) +

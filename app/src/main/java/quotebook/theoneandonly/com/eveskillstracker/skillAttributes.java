@@ -4,9 +4,12 @@ import java.util.List;
 
 public class skillAttributes {
 
+    //API mapping for character attributes
+
 
     private float capacity;
     private String description;
+
     private List<dogma_attributes> dogma_attributes;
 
     public List<skillAttributes.dogma_attributes> getDogma_attributes() {
@@ -37,15 +40,15 @@ public class skillAttributes {
     }
 
     private int group_id;
-    private  int     icon_id;
-    private int     market_group_id;
-    private float      mass;
-    private String      name;
-    private float     packaged_volume;
-    private int      portion_size;
-    private boolean     published;
-    private float     radius;
-    private int      type_id;
-    private float      volume;
+    private int icon_id;
+    private int market_group_id;
+    private float mass;
+    private String name;
+    private float packaged_volume;
+    private int portion_size;
+    private boolean published;
+    private float radius;
+    private int type_id;
+    private float volume;
 
 }

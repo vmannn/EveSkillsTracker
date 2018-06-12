@@ -9,12 +9,9 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
-/**
- * Created by fvf on 6/3/18.
- */
 
+//API call
 public interface EveClient {
-   // @Headers("Basic YmJhZmU1MGM3MzIzNDdjMmJmNDI4MTRkNjA5ZTAxNGU6Y1NSSEtBTHZHb0N4amVjRThNR3J4VWtXUGMxekVpWFg1QzljdmtRTQ==")
 
     @Headers("Accept: application/json")
     @POST("https://login.eveonline.com/oauth/token")
