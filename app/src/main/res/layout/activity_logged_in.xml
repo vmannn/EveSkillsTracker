@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/faaanalll"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/characterpic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"></ImageView>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/charisma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/intelligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/memory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/perception"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/willpower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92000000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#92000000"
+            android:gravity="center"
+            android:text="Welcome to the app. View your skills that are currently being trained in order of position, view all your current skill levels, or try out the skill projection calculator"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            tools:textColor="@android:color/darker_gray"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Skill Projection Calculator"/>
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Current Skills"
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <Button
+            android:id="@+id/qskills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Queued Skills"/>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
